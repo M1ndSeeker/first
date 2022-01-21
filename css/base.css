@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #1d9d73;
+    --secondary-color: #9b9b9b;
+    --offset: 15px;
+    --main-headers: 55px;
+    --secondary-headers: 35px;
+    --third-headers: 26px;
+    --text-size: 18px;
+    --small-text: 14px;
+    --primary-font: Ubuntu light;
+    --secondary-font: Ubuntu medium;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(var(--offset) * -1);
+}
+
+.col {
+    margin: 0 var(--offset);
+}
+
+h2 {
+    font-size: var(--main-headers);
+}
+
+h3 {
+    font-size: var(--secondary-headers);
+}
+h3, h4 {
+    color: var(--primary-color);
+}
+
+h4 {
+    font-size: var(--third-headers);
+}
+
+p {
+    font-size: var(--text-size);
+    color: var(--secondary-color);
+}
+
+h2, h3, h4, p, ul {
+    font-family: var(--primary-font);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

@@ -1,0 +1,200 @@
+/* ************** HEADER ****************** */
+
+header {
+    padding: 25px 0;
+    box-shadow: 0.5px 0.5px 10px rgb(209, 209, 209);
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: nowrap;
+    text-decoration: none;
+}
+
+.logo img {
+    align-self: center;
+}
+
+.logo__company-name {
+    font-family: var(--secondary-font);
+    font-size: var(--secondary-headers);
+    color: black;
+    align-self: center;
+    margin: 0 5px;
+}
+
+.logo__company-phrase {
+    font-size: calc(var(--text-size) * 0.7);
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+
+.menu {
+    list-style: none;
+    font-size: var(--text-size);
+}
+
+.menu li {
+    display: flex;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+}
+
+.drop-down::after {
+    font-family: FontAwesome;
+    content: "\f078";
+    color: var(--primary-color);
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.logo__company-phrase, .menu a, .search {
+    color: var(--secondary-color);
+}
+
+.menu a:hover, .search:hover {
+    color: var(--primary-color);
+}
+
+/* ************** About ****************** */
+
+/* ************** Strengths ****************** */
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% / 3 - (var(--offset) * 2));
+}
+
+.item img {
+    max-width: 120px;
+}
+
+.item p {
+    margin-top: 25px;
+}
+
+.item .btn {
+    align-self: center;
+    margin-top: 30px;
+    padding: 15px 55px;
+    border-radius: 40px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.item p, .item .btn {
+    font-size: var(--text-size);
+}
+
+/* ************** Rules ****************** */
+
+.rule {
+    display: flex;
+    width: calc(100% / 2 - (var(--offset) * 2));
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.wrapper-content {
+    max-width: calc(100% - 130px - 35px); /* ******FIX IT */
+    margin-left: auto;
+}
+
+.wrapper-content p {
+    margin-top: 20px;
+}
+
+/* ************** Team ****************** */
+
+.team h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.person {
+    width: calc(100% / 3 - (var(--offset) * 2));
+    text-align: center;
+}
+
+.person h4, .person p {
+    margin-top: 15px;
+}
+
+.person .social-links {
+    margin: 20px auto;
+    list-style: none;
+}
+
+.person .social-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.person .social-icon {
+    font-size: var(--text-size);
+    color: var(--secondary-color);
+}
+
+.person .social-icon:hover {
+    color: var(--primary-color);
+}
+
+/* ************** Footer ****************** */
+
+footer {
+    padding: 50px 0 25px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.footer__logo {
+    display: flex;
+}
+
+footer img {
+    width: 28px;
+}
+
+.footer-logo-text {
+    font-size: var(--small-text);
+    color: var(--secondary-color);
+    align-self: center;
+    margin-left: 15px;
+}
+
+.footer__social-links {
+    align-self: center;
+}
+
+.footer-icon {
+    color: var(--secondary-color);
+}
+
+.footer-icon:hover {
+    color: var(--primary-color);
+}
+
