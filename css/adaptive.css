@@ -108,9 +108,13 @@
 }
 
 @media screen and (max-width: 600px) {
-/*     .container {
+    .container {
         padding: 0 15px;
-    } */
+    }
+
+    .about *, .why-chooice-us *, .how-we-work * {
+        --offset: 0;
+    }
 
     .wrapper-content {
         margin-top: 20px;
